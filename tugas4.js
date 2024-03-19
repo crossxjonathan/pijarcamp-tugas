@@ -14,16 +14,17 @@ let data = {
 }
 
 // TUGAS A
-
-data.name = "Firman Jonathan"
-data.email = "crossxjonathan@gmail.com"
-data.hobby = "coding"
-
-console.log(data)
+const newData = {
+    ...data,
+name: "Firman Jonathan",
+email: "crossxjonathan@gmail.com",
+hobby: "coding"
+}
+console.log(newData)
 
 // TUGAS B
-
-const {address: {street,city}} = data;
+const city = "medan"
+const {address: {street,city:myCity}} = data;
 
 console.log("street:",street);
 console.log("city:",city);
